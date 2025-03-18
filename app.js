@@ -34,7 +34,10 @@ function sortearAmigo(){
         return;
     }
     let amigoSorteado = amigos [Math.floor(Math.random()*amigos.length)];
+   
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `El amigo sorteado es: ${amigoSorteado}`;
 
+    let limpiarLista = getElementById("listaAmigos");
+    limpiarLista.innerHTML="";
 }
